@@ -1,0 +1,22 @@
+{
+  "name": "sedera-tax/google-pay-passes",
+  "version": "0.1.0",
+  "description": "PHP library for Google Pay Passes",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Razafindrakoto Yannick Sedera Aina",
+      "email": "sedera.aina@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "ext-json": "*",
+    "google/apiclient": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "GooglePayPasses\\": "src/GooglePayPasses/"
+    }
+  }
+}
