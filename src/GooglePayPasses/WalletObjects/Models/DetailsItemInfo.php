@@ -6,7 +6,7 @@ namespace GooglePayPasses\WalletObjects\Models;
 
 use Google\Model;
 
-class CardRowOneItem extends Model
+class DetailsItemInfo extends Model
 {
     protected $internal_gapi_mappings = [];
     protected $itemType = TemplateItem::class;
