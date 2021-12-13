@@ -2,6 +2,7 @@
 
 namespace GooglePayPasses\WalletObjects\Resources;
 
+use Google\Exception;
 use Google\Service\Resource;
 use GooglePayPasses\WalletObjects\Collections\EventTicketClassListResponse;
 use GooglePayPasses\WalletObjects\Models\AddMessageRequest;
@@ -30,6 +31,7 @@ class EventTicketClass extends Resource
      * @param AddMessageRequest $postBody
      * @param array $optParams Optional parameters.
      * @return EventTicketClassAddMessageResponse
+     * @throws Exception
      */
     public function addmessage(string $resourceId, AddMessageRequest $postBody, $optParams = array())
     {
@@ -49,6 +51,7 @@ class EventTicketClass extends Resource
      * characters, '.', '_', or '-'.
      * @param array $optParams Optional parameters.
      * @return EventTicketClassCollection
+     * @throws Exception
      */
     public function get(string $resourceId, $optParams = array())
     {
@@ -64,6 +67,7 @@ class EventTicketClass extends Resource
      * @param EventTicketClassCollection $postBody
      * @param array $optParams Optional parameters.
      * @return EventTicketClassCollection
+     * @throws Exception
      */
     public function insert(EventTicketClassCollection $postBody, $optParams = array())
     {
@@ -88,6 +92,7 @@ class EventTicketClass extends Resource
      * @opt_param int maxResults Identifies the max number of results returned by a
      * list. All results are returned if `maxResults` isn't defined.
      * @return EventTicketClassListResponse
+     * @throws Exception
      */
     public function listEventticketclass($optParams = array())
     {
@@ -108,6 +113,7 @@ class EventTicketClass extends Resource
      * @param EventTicketClassCollection $postBody
      * @param array $optParams Optional parameters.
      * @return EventTicketClassCollection
+     * @throws Exception
      */
     public function patch(string $resourceId, EventTicketClassCollection $postBody, $optParams = array())
     {
@@ -128,6 +134,7 @@ class EventTicketClass extends Resource
      * @param EventTicketClassCollection $postBody
      * @param array $optParams Optional parameters.
      * @return EventTicketClassCollection
+     * @throws Exception
      */
     public function update(string $resourceId, EventTicketClassCollection $postBody, $optParams = array())
     {
