@@ -401,7 +401,7 @@ class FlightClass extends Collection
     {
         return $this->reviewStatus;
     }
-    public function setTextModulesData(TextModuleData $textModulesData)
+    public function setTextModulesData($textModulesData)
     {
         $this->textModulesData = $textModulesData;
     }

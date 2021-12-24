@@ -225,7 +225,7 @@ class LoyaltyObject extends Collection
     {
         return $this->linksModuleData;
     }
-    public function setLocations(LatLongPoint $locations)
+    public function setLocations($locations)
     {
         $this->locations = $locations;
     }
@@ -241,7 +241,7 @@ class LoyaltyObject extends Collection
     {
         return $this->loyaltyPoints;
     }
-    public function setMessages(Message $messages)
+    public function setMessages($messages)
     {
         $this->messages = $messages;
     }
@@ -273,7 +273,7 @@ class LoyaltyObject extends Collection
     {
         return $this->state;
     }
-    public function setTextModulesData(TextModuleData $textModulesData)
+    public function setTextModulesData($textModulesData)
     {
         $this->textModulesData = $textModulesData;
     }

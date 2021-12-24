@@ -321,7 +321,7 @@ class GiftCardClass extends Collection
     {
         return $this->localizedPinLabel;
     }
-    public function setLocations(LatLongPoint $locations)
+    public function setLocations($locations)
     {
         $this->locations = $locations;
     }
@@ -393,7 +393,7 @@ class GiftCardClass extends Collection
     {
         return $this->reviewStatus;
     }
-    public function setTextModulesData(TextModuleData $textModulesData)
+    public function setTextModulesData($textModulesData)
     {
         $this->textModulesData = $textModulesData;
     }

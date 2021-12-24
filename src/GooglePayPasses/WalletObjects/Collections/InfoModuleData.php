@@ -19,7 +19,7 @@ class InfoModuleData extends Collection
     private $labelValueRows;
 
 
-    public function setLabelValueRows(LabelValueRow $labelValueRows)
+    public function setLabelValueRows($labelValueRows)
     {
         $this->labelValueRows = $labelValueRows;
     }

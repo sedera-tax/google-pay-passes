@@ -273,7 +273,7 @@ class GiftCardObject extends Collection
     {
         return $this->state;
     }
-    public function setTextModulesData(TextModuleData $textModulesData)
+    public function setTextModulesData($textModulesData)
     {
         $this->textModulesData = $textModulesData;
     }

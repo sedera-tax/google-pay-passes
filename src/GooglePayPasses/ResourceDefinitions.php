@@ -15,7 +15,6 @@ use GooglePayPasses\WalletObjects\Collections\LinksModuleData;
 use GooglePayPasses\WalletObjects\Collections\LocalizedString;
 use GooglePayPasses\WalletObjects\Collections\LoyaltyClass;
 use GooglePayPasses\WalletObjects\Collections\LoyaltyObject;
-use GooglePayPasses\WalletObjects\Collections\Offer;
 use GooglePayPasses\WalletObjects\Collections\OfferClass;
 use GooglePayPasses\WalletObjects\Collections\OfferObject;
 use GooglePayPasses\WalletObjects\Collections\TicketLeg;
@@ -43,7 +42,6 @@ use GooglePayPasses\WalletObjects\Models\ReservationInfo;
 use GooglePayPasses\WalletObjects\Models\TextModuleData;
 use GooglePayPasses\WalletObjects\Models\TranslatedString;
 use GooglePayPasses\WalletObjects\Models\Uri;
-use phpseclib3\Common\Functions\Strings;
 
 /**
  * Class ResourceDefinitions
@@ -211,7 +209,7 @@ class ResourceDefinitions
         $telephoneUri->setUri("tel:6505555555");
         $telephoneUri->setDescription("Call Customer Service");
         $linksModuleData = new LinksModuleData();
-        $linksModuleData->setUris($locationUri, $telephoneUri);
+        $linksModuleData->setUris([$locationUri, $telephoneUri]);
 
         $payload = new EventTicketClass();
         //required properties
@@ -700,8 +698,6 @@ class ResourceDefinitions
         $infoModuleData = new InfoModuleData();
         $infoModuleData->setLabelValueRows(array($rowOne, $rowTwo));
 
-
-        $rowOne = new LabelValueRow();
 
         // Define loyalty object
         $payload = new LoyaltyObject();

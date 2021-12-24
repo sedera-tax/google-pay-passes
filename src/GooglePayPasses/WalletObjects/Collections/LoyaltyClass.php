@@ -372,7 +372,7 @@ class LoyaltyClass extends Collection
     {
         return $this->localizedSecondaryRewardsTierLabel;
     }
-    public function setLocations(LatLongPoint $locations)
+    public function setLocations($locations)
     {
         $this->locations = $locations;
     }
@@ -380,7 +380,7 @@ class LoyaltyClass extends Collection
     {
         return $this->locations;
     }
-    public function setMessages(Message $messages)
+    public function setMessages($messages)
     {
         $this->messages = $messages;
     }
@@ -468,7 +468,7 @@ class LoyaltyClass extends Collection
     {
         return $this->secondaryRewardsTierLabel;
     }
-    public function setTextModulesData(TextModuleData $textModulesData)
+    public function setTextModulesData($textModulesData)
     {
         $this->textModulesData = $textModulesData;
     }

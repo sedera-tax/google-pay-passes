@@ -325,7 +325,7 @@ class TransitObject extends Collection
     {
         return $this->ticketLeg;
     }
-    public function setTicketLegs(TicketLeg $ticketLegs)
+    public function setTicketLegs($ticketLegs)
     {
         $this->ticketLegs = $ticketLegs;
     }
