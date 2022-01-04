@@ -3,6 +3,7 @@
 namespace GooglePayPasses;
 
 use Google\Service;
+use Google_Client;
 use GooglePayPasses\WalletObjects\Resources\EventTicketClass;
 use GooglePayPasses\WalletObjects\Resources\EventTicketObject;
 use GooglePayPasses\WalletObjects\Resources\FlightClass;
@@ -54,6 +55,10 @@ class WalletObjectsService extends Service
     public $smarttap;
     public $transitclass;
     public $transitobject;
+    /**
+     * @var string
+     */
+    private $serviceName;
 
 
     /**

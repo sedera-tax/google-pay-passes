@@ -459,7 +459,6 @@ class ResourceDefinitions
         $textModulesData->setHeader("Where to Redeem");
         $textModulesDatas = array($textModulesData);
 
-
         $locationUri = new Uri();
         $locationUri->setUri("http://maps.google.com/");
         $locationUri->setDescription("Nearby Locations");
@@ -795,14 +794,14 @@ class ResourceDefinitions
         $localOriginNameTranslated->setLanguage( "en-US");
         $localOriginNameTranslated->setValue("SFO Transit Center");
         $localOriginName->setDefaultValue($localOriginNameTranslated);
-        $ticketleg = new TicketLeg();
-        $ticketleg->setArrivalDateTime("2020-04-12T20:20:50.52Z");
-        $ticketleg->setDepartureDateTime("2020-04-12T16:20:50.52Z");
-        $ticketleg->setOriginStationCode("LA");
-        $ticketleg->setDestinationStationCode("SFO");
-        $ticketleg->setDestinationName($localDestinationName);
-        $ticketleg->setOriginName($localOriginName);
-        $ticketleg->setFareName($localFare);
+        $ticketLeg = new TicketLeg();
+        $ticketLeg->setArrivalDateTime("2020-04-12T20:20:50.52Z");
+        $ticketLeg->setDepartureDateTime("2020-04-12T16:20:50.52Z");
+        $ticketLeg->setOriginStationCode("LA");
+        $ticketLeg->setDestinationStationCode("SFO");
+        $ticketLeg->setDestinationName($localDestinationName);
+        $ticketLeg->setOriginName($localOriginName);
+        $ticketLeg->setFareName($localFare);
 
 
         // Define transit object
@@ -816,7 +815,7 @@ class ResourceDefinitions
         $payload->setBarcode($barcode);
         $payload->setPassengerNames("Sir Bacon the IV");
         $payload->setPassengerType("singlePassenger");
-        $payload->setTicketLegs(array($ticketleg));
+        $payload->setTicketLegs(array($ticketLeg));
 
 
         return $payload;
