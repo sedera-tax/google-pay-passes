@@ -1,6 +1,6 @@
 {
   "name": "sedera-tax/google-pay-passes",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "PHP library for Google Pay Passes",
   "license": "MIT",
   "authors": [
@@ -11,6 +11,7 @@
   ],
   "minimum-stability": "stable",
   "require": {
+    "php": ">=7.2",
     "ext-json": "*",
     "google/apiclient": "^2.4"
   },
